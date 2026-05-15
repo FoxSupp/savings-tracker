@@ -1,11 +1,10 @@
-version: "3.8"
 services:
   app:
     build: .
     container_name: savings-tracker
     restart: unless-stopped
     ports:
-      - "5000:5000"
+      - "5010:5000"
     volumes:
       - ./data:/app/data
     healthcheck:
